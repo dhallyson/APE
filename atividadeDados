@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+main()
+{
+
+    char nome[20];
+    int idade;
+    char matricula[16];
+    char endereco[100];
+    char curso[50];
+    int periodo;
+    char disciplina[20];
+    float mensalidade;
+    float bolsa;
+    float valor_final;
+
+    printf("Digite seu nome: ");
+    fgets(nome, 50, stdin);
+    fflush(stdin);
+
+    printf("Digite sua idade: ");
+    scanf("%i", &idade);
+    fflush(stdin);
+
+    printf("Digite sua matricula: ");
+    fgets(matricula, 16, stdin);
+    fflush(stdin);
+
+    printf("Digite eu endereço: ");
+    fgets(endereco, 100, stdin);
+
+    printf("Digite seu curso: ");
+    fgets(curso, 50, stdin);
+    fflush(stdin);
+
+    printf("Digite seu período: ");
+    scanf("%i", &periodo);
+    fflush(stdin);
+
+    printf("Digite sua disciplina: ");
+    fgets(disciplina, 20, stdin);
+    fflush(stdin);
+
+    printf("Digite o valor do curso: ");
+    scanf("%f", &mensalidade);
+    fflush(stdin);
+
+    printf("Quantos por cento de bolsa você tem: ");
+    scanf("%f", &bolsa);
+    fflush(stdin);
+
+    printf("\n Nome: %s", nome);
+    printf("\n Idade: %i", idade);
+    printf("\n Matricula: %s", matricula);
+    printf("\n Endereço: %s", endereco);
+    printf("\n Curso: %s", curso);
+    printf("\n Periodo: %i", periodo);
+    printf("\n Disciplinas: %s", disciplina);
+    printf("\n Mensalidade: %.2f", mensalidade);
+    printf("\n Bolsa: %.2f", bolsa);
+
+    valor_final = mensalidade - (mensalidade * (bolsa / 100));
+
+    printf("Valor da mensalidade com a bolsa: %.2f", valor_final);
+
+    return 0;
+}
