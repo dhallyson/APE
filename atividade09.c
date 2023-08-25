@@ -4,36 +4,30 @@
 main() {
 
   /*
-  Escreva um algoritmo para ler o salário mensal atual de um funcionário
-  e o percentual de reajuste. Calcular e escrever o valor do novo salário.
+    O custo de um carro novo ao consumidor é a soma do custo de fábrica com a
+    porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica).
+    Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%,
+    escrever um algoritmo para ler o custo de fábrica de um carro, calcular e
+    escrever o custo final ao consumidor
   */
 
   // Definição de variáveis
-  float salarioMensal, salarioNovoValor;
-  int salarioPercentualReajuste;
+  float custoFabricaCarro, custoFinalConsumidor;
 
   // Scan salario Mensal
 
-  printf("Digite seu salario mensal: ");
-  scanf("%f", &salarioMensal);
-  // fflush(stdin);
-
-  // Scan reajuste salarial
-
-  printf("Digite a porcentagem do reajuste: ");
-  scanf("%d", &salarioPercentualReajuste);
-  // fflush(stdin);
+  printf("Digite o custo de fabricação do carro: ");
+  scanf("%f", &custoFabricaCarro);
 
   // Processamento dos valores
 
   // Calculo 01: Descobrir quanto vale a porcentagem do salário e somar ao
   // salário
-  salarioNovoValor =
-      ((salarioPercentualReajuste * 0.01) * salarioMensal) + salarioMensal;
+  custoFinalConsumidor = (custoFabricaCarro * 0.28) +
+                         (custoFabricaCarro * 0.45) + custoFabricaCarro;
 
   // Mostra os resultados
 
-  printf("O reajuste de %d em cima do salario de %.2f resulta no salario novo R$ "
-         "%.2f",
-         salarioPercentualReajuste, salarioMensal, salarioNovoValor);
+  printf("O custo final do consumidor com o carro é: R$ %.2f",
+         custoFinalConsumidor);
 }
