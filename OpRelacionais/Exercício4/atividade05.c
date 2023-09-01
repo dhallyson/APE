@@ -15,7 +15,7 @@ main() {
 
   if (number == 5 || number == 200 || number == 400) {
     printf("O número %d é igual a 5 ou 200 ou 400", number);
-  }else if(number >= 500 && number <= 1000){
+  }else if(number > 500 && number < 1000){
     printf("O número %d está entre 500 e 1.000", number);
   }else{
     printf("O número %d é um número qualquer", number);
