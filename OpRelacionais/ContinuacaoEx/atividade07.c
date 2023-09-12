@@ -23,7 +23,7 @@ main() {
   scanf("%d", &nota03);
   fflush(stdin);
 
-  media = ((nota01 * 1) + (nota02 * 1) + (nota03 * 3)) / (1 + 1 + 3);
+  media = ((nota01 * 1) + (nota02 * 1) + (nota03 * 2)) / (1 + 1 + 2);
 
   if(media >= 7){
     printf("Aluno aprovado com média %.1f", media);
