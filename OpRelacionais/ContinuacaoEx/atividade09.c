@@ -36,7 +36,7 @@ main() {
     } else {
       printf("Nenhum reajuste");
     }
-    // Verifica se o salário é até 500,00
+    // Verifica se o salário é entre 500,00 e 1000,00
   } else if (salarioValor > 500 && salarioValor <= 1000) {
     // Verifica se o tempo de serviço é maior que 1 e menor que 3 anos
     if (tempoServico >= 1 && tempoServico <= 3) {
@@ -46,7 +46,7 @@ main() {
     } else {
       printf("Nenhum reajuste");
     }
-    // Verifica se o salário é até 500,00
+    // Verifica se o salário é entre 1000,00 e 1500,00
   } else if (salarioValor > 1000 && salarioValor <= 1500) {
     // Verifica se o tempo de serviço é maior que 4 e menor que 6 anos
     if (tempoServico >= 4 && tempoServico <= 6) {
@@ -56,7 +56,7 @@ main() {
     } else {
       printf("Nenhum reajuste");
     }
-    // Verifica se o salário é até 500,00
+    // Verifica se o salário é entre 1500,00 e 2000,00
   } else if (salarioValor > 1500 && salarioValor <= 2000) {
     // Verifica se o tempo de serviço é maior que 7 e menor que 10 anos
     if (tempoServico >= 7 && tempoServico <= 10) {
