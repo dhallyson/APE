@@ -26,6 +26,6 @@ main() {
     
   }while(codFruta != 0);
 
-  printf("O valor total da compra é %d", value);
+  printf("O valor total da compra é R$ %d", value);
   
 }
