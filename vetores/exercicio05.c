@@ -4,7 +4,7 @@ main() {
 
   int vetor[10], pares = 0;
 
-  for (int i = 0; i < 9; i++) {
+  for (int i = 0; i < 10; i++) {
     printf("\nO valor do vetor[%d]: ", i);
     scanf("%d", &vetor[i]);
 
