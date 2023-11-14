@@ -4,11 +4,13 @@ int validaQuantidade(int numeroPecas){
   if(numeroPecas >= 0){
     return(numeroPecas);
   }else{
-    printf("Quantidade inválida");
+    return 1;
   }
 }
 
-calculaSalario(int numeroPecas){
+float calculaSalario(int numeroPecas){
+  float salarioFinal;
+  
   if(numeroPecas < 50){
     return salarioFinal = 600.00;
     
@@ -27,8 +29,13 @@ calculaSalario(int numeroPecas){
   }
 }
 
-mostraFinal(float salarioFinal){
-  printf("O salário final é: %.2f", salarioFinal);
+mostraFinal(float numeroPecas){
+  
+  if(validaQuantidade(numeroPecas) == 1){
+    printf("Quantidade inválida");
+  }else{
+    printf("O salário final é: %.2f", calculaSalario(numeroPecas));
+  }
 }
 
 main(void) {
@@ -38,8 +45,7 @@ main(void) {
   printf("Digite a quantidade de peças fabricadas: ");
   scanf("%d", &numeroPecas);
   
-  // validaQuantidade(numeroPecas);
-  calculaSalario(numeroPecas);
+  mostraFinal(numeroPecas);
 }
 
 
